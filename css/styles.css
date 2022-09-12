@@ -1,0 +1,128 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  /* Hack */
+  font-size: 62.5%; /* 1REM = 10px */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.8;
+}
+
+h1, h2, h3 {
+	font-family: font-family: 'Libre Baskerville', serif;
+	
+	/*Elimina el margen por defecto de los headings*/
+	margin: 0 0 5rem 0;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+/* GLOBALES */
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.contenedor {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+img {
+	/* La imagen cubre el 100% del elemento */
+	max-width: 100%;
+	/* La imagen elimina el pqueño espacio que queda entre elementos */
+	display: block;
+}
+
+/* Header y navegacion */
+
+header {
+	font-size: 2rem;
+}
+
+.nombre-sitio {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.nombre-sitio span {
+	color: #037bc0;
+}
+
+.main-nav {
+	padding: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor-nav {
+	border-top: 1px solid #e1e1e1;
+}
+
+.hero {
+	background: url(../assets/img/principal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 55rem;
+}
+
+/* ---  */
+
+/* Categorias */
+
+.categorias h2 {
+	text-align: center;
+}
+
+.listado-categorias {
+	display: grid;
+	justify-content: center;
+	/* No se recomienda utilizar Px aquí. Mejor usar fracciones (fr) */
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;  
+}
+
+.categoria {
+	
+}
+
+.categoria a {
+	display: block;
+	text-align: center;
+	padding: 2rem:
+	font-size: 2rem;
+}
+
+.categoria a:hover {
+	border-bottom-right-radius: 1.5rem;
+	background-color: #037bc0;
+	color: white;
+}
+
+/*  Medidas relativas */
+/* % -> toma el valor porcentual con respecto al elemento padre. */
+/* em -> multiplica el tamaño del elemento padre. */
+/* vw -> Viewoport Width toma el valor porcentual del ancho de la pantalla. 
+		No es muy estable porque algunos dispositivos no lo soportan */
+/*	rem -> toman el tamaño de fuente predeterminado de HTML (16 px). Y multiplica
+		éste valor. Super recomendado. */
