@@ -90,6 +90,10 @@ header {
 
 /* Categorias */
 
+.categorias {
+	padding-top: 5rem;
+}
+
 .categorias h2 {
 	text-align: center;
 }
@@ -118,6 +122,17 @@ header {
 	background-color: #037bc0;
 	color: white;
 }
+
+/* Bloque sobre nosotros */
+	.sobre-nosotros {
+		background-image: linear-gradient(to right, transparent 50%, #037bc0 50%), url("../assets/img/nosotros.jpg");
+
+		/* EL primer valor pertenece al background gradeint y el segundo a la imagen (La ( , ) importante)*/
+		background-size: 100%, 120rem;
+		background-position: left center;
+		padding: 10rem 0;
+	}
+/* ---  */ 
 
 /*  Medidas relativas */
 /* % -> toma el valor porcentual con respecto al elemento padre. */
