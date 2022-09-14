@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: font-family: 'Libre Baskerville', serif;
+	font-family: 'Libre Baskerville', serif;
 	
 	/*Elimina el margen por defecto de los headings*/
 	margin: 0 0 5rem 0;
@@ -113,7 +113,7 @@ header {
 .categoria a {
 	display: block;
 	text-align: center;
-	padding: 2rem:
+	padding: 2rem;
 	font-size: 2rem;
 }
 
@@ -132,6 +132,31 @@ header {
 		background-position: left center;
 		padding: 10rem 0;
 	}
+
+	.text-sobre-nosotros {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.text-sobre-nosotros div {
+		/* Se recomienda que el tamaño del flex-basis esté en porcentajes */
+		flex-basis: 50%;
+		padding-left: 3rem;
+		color: white;
+	}
+
+
+
+/* Cuando usar Flexbox y cuando Grid*/
+/*
+* Flexbox: Se utiliza para la alineacion o distribucion de objetos que están dentro de contenedores.
+* Css Grid: Se utiliza para las Columnas principales o Layouts del sitio web.
+	RESUMEn: Grid para los contenedores principale y flexbox para el contenido de esos contenedores.
+*/
+
+
+
+
 /* ---  */ 
 
 /*  Medidas relativas */
