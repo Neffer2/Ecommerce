@@ -53,8 +53,14 @@ img {
 	display: block;
 }
 
-/* Header y navegacion */
+/* Utilidades */
 
+.text-center {
+	text-align: center;
+}
+
+
+/* Header y navegacion */
 header {
 	font-size: 2rem;
 }
@@ -91,7 +97,7 @@ header {
 /* Categorias */
 
 .categorias {
-	padding-top: 5rem;
+	padding: 5rem 0;
 }
 
 .categorias h2 {
@@ -122,7 +128,7 @@ header {
 	background-color: #037bc0;
 	color: white;
 }
-
+ 
 /* Bloque sobre nosotros */
 	.sobre-nosotros {
 		background-image: linear-gradient(to right, transparent 50%, #037bc0 50%), url("../assets/img/nosotros.jpg");
@@ -145,14 +151,26 @@ header {
 		color: white;
 	}
 
-
-
 /* Cuando usar Flexbox y cuando Grid*/
 /*
 * Flexbox: Se utiliza para la alineacion o distribucion de objetos que están dentro de contenedores.
 * Css Grid: Se utiliza para las Columnas principales o Layouts del sitio web.
 	RESUMEn: Grid para los contenedores principale y flexbox para el contenido de esos contenedores.
 */
+
+/* Nuestros productos */
+
+ .nuestros-productos {
+	padding: 5rem 0;
+ }
+
+ .listado-productos {
+
+ }
+
+ .producto {
+	background-color: #037bc0;
+ }
 
 
 
