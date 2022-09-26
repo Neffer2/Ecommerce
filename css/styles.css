@@ -42,7 +42,7 @@ a {
 }
 
 .contenedor {
-	max-width: 120rem;
+	max-width: 120rem; 
 	margin: 0 auto;
 }
 
@@ -52,6 +52,21 @@ img {
 	/* La imagen elimina el pqueño espacio que queda entre elementos */
 	display: block;
 }
+
+.btn {
+	display: block;
+	padding: .5rem 0;
+	background-color: #8cbc00;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: background-color .3s ease;
+ }
+
+ .btn:hover {
+	background-color: #769c02;
+	/* transform: scale(.8); */
+ }
 
 /* Utilidades */
 
@@ -117,6 +132,9 @@ header {
 }
 
 .categoria a {
+	/* Display block toma todo el tamaño disponible. Inline, solo toma el necesario.
+	* Inline block permite asginar ancho y alto. 
+	*/
 	display: block;
 	text-align: center;
 	padding: 2rem;
@@ -165,14 +183,108 @@ header {
  }
 
  .listado-productos {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: center;
+	gap: 1rem;
+ } 
 
+ .producto:nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 7;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+ }
+
+ .producto:nth-child(1) img {
+	height: 43rem;
+	width: 100%;
+	/* Mueve la imagen como backgrund cover. Si no estuviera, la imagen se vería desproporcioandad */
+	object-fit: cover;
+ }
+
+ .producto:nth-child(2) {
+	grid-column-start: 1;
+	grid-column-end: 4;
+ }
+
+ .producto:nth-child(2) img, .producto:nth-child(3) img {
+	height: 25rem;
+	width: 100%;
+	/* Mueve la imagen como backgrund cover. Si no estuviera, la imagen se vería desproporcioandad */
+	object-fit: cover;
+ }
+
+ .producto:nth-child(3) {
+	grid-column-start: 4;
+	grid-column-end: 7;
+ }
+
+ .producto:nth-child(4) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+ }
+
+ .producto:nth-child(5) {
+	grid-column-start: 3;
+	grid-column-end: 5;
+ }
+
+ .producto:nth-child(6) {
+	grid-column-start: 5;
+	grid-column-end: 7;
  }
 
  .producto {
 	background-color: #037bc0;
  }
+ 
+ .texto-producto {
+	text-align: center;
+	color: #fff;
+	padding: 2rem;
+ }
 
+.texto-producto h3 {
+	margin: 0;
+}
 
+.texto-producto p {
+	margin: 0 0 2rem 0;
+}
+
+.precio {
+	font-weight: 600;
+	font-size: 2.8rem;
+}
+
+/* Footer */
+
+.footer-line {
+	border-top: 1px solid #e1e1e1;
+}
+
+.footer-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 2.5rem;
+}
+
+.footer-container h3 {
+	margin: 3rem 0;
+}
+
+.footer-section nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-container p {
+	margin: 0 auto;
+	grid-column: 1 / 4;
+}
+
+/* --- */
 
 
 /* ---  */ 
